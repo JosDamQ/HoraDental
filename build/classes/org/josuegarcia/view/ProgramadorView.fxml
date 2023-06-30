@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josuegarcia.controller.ProgramadorController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#84b4d4" height="420.0" layoutX="288.0" layoutY="-10.0" stroke="#84b4d4" strokeType="INSIDE" width="324.0" />
+      <Ellipse fill="#dde4ef" layoutX="91.0" layoutY="165.0" radiusX="262.0" radiusY="362.0" rotate="-36.9" stroke="#dde4ef" strokeType="INSIDE" />
+      <Ellipse fill="#54a4d3" layoutX="146.0" layoutY="500.0" radiusX="292.0" radiusY="197.0" rotate="-167.5" stroke="#54a4d3" strokeType="INSIDE" />
+      <ImageView fitHeight="159.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/FotoPersonal.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="193.0" layoutY="41.0" text="Josue Damian García Quiñonez">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font></Label>
+      <Label layoutX="294.0" layoutY="120.0" text="2018163">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font></Label>
+      <Label layoutX="298.0" layoutY="199.0" text="IN5AM">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font></Label>
+      <ImageView fitHeight="159.0" fitWidth="129.0" layoutX="278.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/LogoKinal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="97.0" layoutY="303.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/volver.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

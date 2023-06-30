@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josuegarcia.controller.DetalleRecetaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#84b4d4" height="434.0" layoutX="284.0" stroke="#84b4d4" strokeType="INSIDE" width="602.0" />
+      <Ellipse fill="#dde4ef" layoutX="193.0" layoutY="146.0" radiusX="357.0" radiusY="422.0" rotate="-36.9" stroke="#dde4ef" strokeType="INSIDE" />
+      <Ellipse fill="#54a4d3" layoutX="219.0" layoutY="492.0" radiusX="374.0" radiusY="213.0" rotate="-167.5" stroke="#54a4d3" strokeType="INSIDE" />
+      <HBox layoutX="163.0" layoutY="334.0" prefHeight="96.0" prefWidth="474.0">
+         <children>
+            <Button fx:id="btnNuevo" contentDisplay="TOP" mnemonicParsing="false" onAction="#nuevo" prefHeight="100.0" prefWidth="111.0" styleClass="button1" stylesheets="@../resource/HoraDentalCSS.css" text="Nuevo">
+               <graphic>
+                  <ImageView fx:id="imgNuevo" fitHeight="72.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Agregar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEliminar" contentDisplay="TOP" mnemonicParsing="false" onAction="#eliminar" prefHeight="95.0" prefWidth="113.0" styleClass="button1" stylesheets="@../resource/HoraDentalCSS.css" text="Eliminar">
+               <graphic>
+                  <ImageView fx:id="imgEliminar" fitHeight="75.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Quitar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEditar" contentDisplay="TOP" mnemonicParsing="false" onAction="#editar" prefHeight="95.0" prefWidth="133.0" styleClass="button1" stylesheets="@../resource/HoraDentalCSS.css" text="Editar">
+               <graphic>
+                  <ImageView fx:id="imgEditar" fitHeight="67.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/editartexto.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnReporte" contentDisplay="TOP" mnemonicParsing="false" onAction="#reporte" prefHeight="100.0" prefWidth="111.0" styleClass="button1" stylesheets="@../resource/HoraDentalCSS.css" text="Reporte">
+               <graphic>
+                  <ImageView fx:id="imgReporte" fitHeight="71.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/reportenegocios.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Pane layoutX="-123.0" layoutY="-127.0" prefHeight="377.0" prefWidth="123.0" rotate="90.0" style="-fx-background-color: #ddaca0; -fx-background-radius: 100 100 50 50;">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="95.0" layoutX="18.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../image/evaluacion.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="-22.0" layoutY="65.0" rotate="-90.0" text="Detalle Recetas" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="74.0" fitWidth="69.0" layoutX="32.0" layoutY="341.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/flecha-hacia-atras.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="135.0" layoutY="17.0" prefHeight="100.0" prefWidth="538.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.33333841959637" minWidth="10.0" prefWidth="115.3333231608073" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.33333333333333" minWidth="10.0" prefWidth="112.66670735677083" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="123.33333333333331" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.33331298828122" minWidth="10.0" prefWidth="158.66666666666663" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Cod. Detalle Receta">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoDetalleReceta" editable="false" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="3.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label prefHeight="19.0" prefWidth="119.0" text="Dosis" GridPane.columnIndex="2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label text="Cod. Receta" GridPane.rowIndex="1">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbCodigoReceta" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtDosis" editable="false" GridPane.columnIndex="3" />
+            <Label text="Cod. Medicamento" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cmbCodigoMedicamento" prefHeight="25.0" prefWidth="112.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tblDetalleRecetas" layoutX="47.0" layoutY="134.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="661.0" stylesheets="@../resource/HoraDentalCSS.css">
+        <columns>
+          <TableColumn fx:id="colCodigoDetalleReceta" prefWidth="125.33331298828125" text="Cod. Detalle Receta" />
+          <TableColumn fx:id="colDosis" prefWidth="267.99998474121094" text="Dosis" />
+            <TableColumn fx:id="colCodReceta" prefWidth="140.66665649414062" text="Cod. Receta" />
+            <TableColumn fx:id="colCodMedicamento" prefWidth="127.33331298828125" text="Cod. Medicamento" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

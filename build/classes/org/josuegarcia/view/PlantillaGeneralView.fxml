@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#84b4d4" height="420.0" layoutX="284.0" stroke="#84b4d4" strokeType="INSIDE" width="324.0" />
+      <Ellipse fill="#dde4ef" layoutX="81.0" layoutY="155.0" radiusX="262.0" radiusY="362.0" rotate="-36.9" stroke="#dde4ef" strokeType="INSIDE" />
+      <Ellipse fill="#54a4d3" layoutX="136.0" layoutY="490.0" radiusX="292.0" radiusY="197.0" rotate="-167.5" stroke="#54a4d3" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
